@@ -1,0 +1,7 @@
+[
+  { "name": "Home", "href": "/" },
+  { "name": "Services", "href": "/services" },
+  { "name": "Shaft Stick", "href": "/shaftstick" },
+  { "name": "Contact", "href": "/contact" },
+  { "name": "About us", "href": "/about" }
+]

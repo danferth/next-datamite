@@ -1,14 +1,7 @@
 import Link from "next/link";
-
+import navigationLinks from "../data/navigation.json";
 export default function Footer() {
-  const navigation = {
-    main: [
-      { name: "Home", href: "/" },
-      { name: "Services", href: "/services" },
-      { name: "Contact", href: "/contact" },
-      { name: "About Us", href: "/about" },
-    ],
-  };
+  const navigation = navigationLinks;
 
   const date = new Date();
   const year = date.getFullYear();
@@ -19,7 +12,7 @@ export default function Footer() {
           className="-mb-6 hidden columns-2 sm:flex sm:justify-center sm:space-x-12"
           aria-label="Footer"
         >
-          {navigation.main.map((item) => (
+          {navigation.map((item) => (
             <div key={item.name} className="pb-6">
               <Link
                 href={item.href}
