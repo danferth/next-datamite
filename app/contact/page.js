@@ -27,6 +27,9 @@ export default function Contact() {
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Contact sales
         </h2>
+        <p className="mt-2.5 text-slate-500">
+          You can also call us locally at (281)703-6102
+        </p>
       </div>
       <form
         ref={form}
